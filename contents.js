@@ -29,27 +29,25 @@ const portfolioContent = {
   about: {
     title: "About Me",
     intro:
-      "With over 5 years of experience in web development, I specialize in creating sophisticated, user-centered digital solutions that drive business success.",
+      "With over a year of experience in web development, I provide services in creating sophisticated, user-centered digital solutions that drive business success.",
     description:
       "My expertise spans across modern web technologies, with a particular focus on responsive design, performance optimization, and accessibility. I believe in the power of clean code, thoughtful design, and collaborative problem-solving.",
 
     // Skills organized by category
     skills: [
       {
-        category: "Frontend Development",
-        technologies: "HTML5, CSS3, JavaScript, React, Vue.js",
+        category: "Web Development",
+        technologies:
+          "Ruby on Rails, React, Vue.js, Node.js, Express.js, Git, PostgreSQL",
       },
       {
-        category: "Backend Development",
-        technologies: "Ruby on Rails, Node.js, Python, PostgreSQL",
+        category: "Programming Languages",
+        technologies: "Ruby, Python, HTML5, CSS3, JavaScript, TypeScript",
       },
       {
-        category: "Design & UX",
-        technologies: "UI/UX Design, Responsive Design, Prototyping",
-      },
-      {
-        category: "Tools & Workflow",
-        technologies: "Git, Docker, CI/CD, Agile Methodology",
+        category: "Competencies",
+        technologies:
+          "Responsive Design, Prototyping, Web Application Development, Teaching, Team Collaboration",
       },
     ],
   },
@@ -65,7 +63,7 @@ const portfolioContent = {
       {
         title: "StudyHive",
         description:
-          "Make learning easier by doing it with other people rather than alone. Enhance your self-study.",
+          "Make learning easier by doing it with other people rather than alone.",
         icon: "💻",
         technologies: ["Ruby on Rails", "PostgreSQL", "Stimulus js", "Heroku"],
         link: "https://www.studyhive.org/",
@@ -82,7 +80,7 @@ const portfolioContent = {
         title: "Eigo-Park",
         description: "An app of educational games for elementary school kids.",
         icon: "📔",
-        technologies: ["React", "Vite"],
+        technologies: ["React", "Vite", "Tailwind CSS", "Netlify"],
         link: "https://eigo-park.netlify.app/",
       },
     ],
@@ -98,17 +96,17 @@ const portfolioContent = {
     info: [
       {
         type: "Email",
-        value: "john.doe@email.com",
+        value: "araingulraiz@gmail.com",
         icon: "📧",
       },
       {
         type: "Phone",
-        value: "+1 (555) 123-4567",
+        value: "+81 (90) 5426-8297",
         icon: "📱",
       },
       {
         type: "Location",
-        value: "New York, NY",
+        value: "Tokyo, Japan",
         icon: "📍",
       },
     ],
@@ -135,11 +133,10 @@ const portfolioContent = {
 
   // Footer Section
   footer: {
-    copyright: "© 2024 John Doe. All rights reserved.",
+    copyright: "© 2025 Rayz Arain. All rights reserved.",
     socialLinks: [
-      { name: "LinkedIn", url: "#" },
-      { name: "GitHub", url: "#" },
-      { name: "Twitter", url: "#" },
+      { name: "LinkedIn", url: "https://www.linkedin.com/in/rayz-arain/" },
+      { name: "GitHub", url: "https://github.com/authorminator" },
     ],
   },
 };

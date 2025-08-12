@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title id="page-title">Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -94,9 +98,9 @@
           <div class="contact-info" id="contact-info">
             <!-- Contact info will be populated by JavaScript -->
           </div>
-          <form class="contact-form" id="contact-form">
-            <!-- Form fields will be populated by JavaScript -->
-          </form>
+          <!-- <form class="contact-form" id="contact-form"> -->
+          <!-- Form fields will be populated by JavaScript -->
+          <!-- </form> -->
         </div>
       </div>
     </section>
@@ -254,39 +258,39 @@
         });
 
         // Populate contact form
-        const contactForm = document.getElementById("contact-form");
-        content.contact.form.fields.forEach((field) => {
-          const formGroup = document.createElement("div");
-          formGroup.className = "form-group";
+        // const contactForm = document.getElementById("contact-form");
+        // content.contact.form.fields.forEach((field) => {
+        //   const formGroup = document.createElement("div");
+        //   formGroup.className = "form-group";
 
-          const label = document.createElement("label");
-          label.setAttribute("for", field.name);
-          label.textContent = field.label;
+        //   const label = document.createElement("label");
+        //   label.setAttribute("for", field.name);
+        //   label.textContent = field.label;
 
-          let input;
-          if (field.type === "textarea") {
-            input = document.createElement("textarea");
-            input.rows = field.rows || 5;
-          } else {
-            input = document.createElement("input");
-            input.type = field.type;
-          }
+        //   let input;
+        //   if (field.type === "textarea") {
+        //     input = document.createElement("textarea");
+        //     input.rows = field.rows || 5;
+        //   } else {
+        //     input = document.createElement("input");
+        //     input.type = field.type;
+        //   }
 
-          input.id = field.name;
-          input.name = field.name;
-          input.required = field.required;
+        //   input.id = field.name;
+        //   input.name = field.name;
+        //   input.required = field.required;
 
-          formGroup.appendChild(label);
-          formGroup.appendChild(input);
-          contactForm.appendChild(formGroup);
-        });
+        //   formGroup.appendChild(label);
+        //   formGroup.appendChild(input);
+        //   contactForm.appendChild(formGroup);
+        // });
 
-        // Add submit button
-        const submitButton = document.createElement("button");
-        submitButton.type = "submit";
-        submitButton.className = "btn btn-primary";
-        submitButton.textContent = content.contact.form.submitText;
-        contactForm.appendChild(submitButton);
+        // // Add submit button
+        // const submitButton = document.createElement("button");
+        // submitButton.type = "submit";
+        // submitButton.className = "btn btn-primary";
+        // submitButton.textContent = content.contact.form.submitText;
+        // contactForm.appendChild(submitButton);
 
         // Populate footer
         document.getElementById("footer-copyright").textContent =
@@ -299,6 +303,7 @@
           a.href = link.url;
           a.className = "social-link";
           a.textContent = link.name;
+          a.target = "_blank";
           footerSocial.appendChild(a);
         });
 
@@ -331,13 +336,13 @@
         });
 
         // Form submission
-        document
-          .querySelector(".contact-form")
-          .addEventListener("submit", function (e) {
-            e.preventDefault();
-            alert(portfolioContent.contact.form.successMessage);
-            this.reset();
-          });
+        // document
+        //   .querySelector(".contact-form")
+        //   .addEventListener("submit", function (e) {
+        //     e.preventDefault();
+        //     alert(portfolioContent.contact.form.successMessage);
+        //     this.reset();
+        //   });
       }
     </script>
   </body>

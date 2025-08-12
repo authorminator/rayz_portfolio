@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "Google Sans Code", serif;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -79,7 +79,7 @@ p {
 }
 
 .nav-logo h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Google Sans Code", serif;
   color: #2c3e50;
   margin: 0;
   font-size: 1.8rem;
@@ -415,15 +415,17 @@ p {
 }
 
 .contact-content {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr; */
+  display: flex;
+  justify-self: center;
   gap: 4rem;
   margin-top: 3rem;
 }
 
 .contact-info {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 2rem;
 }
 
